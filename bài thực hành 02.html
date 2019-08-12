@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài thực hành 02</title>
+</head>
+<body>
+    <p>
+    <label>Fahrenheit</label>
+    <input type="number" id="input" placeholder="Fahrenheit"
+    oninput="convert(this.value)" onchange="convert(this.value)">
+    </p>
+    <p> Calsius :<span id="output"></span></p>
+
+
+    <script>
+        function convert(valNum) {
+            valNum=parseFloat(valNum);
+            document.getElementById('output').innerHTML=(valNum-32/1.8);
+        }
+    </script>
+</body>
+</html>
